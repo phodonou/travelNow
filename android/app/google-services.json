@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "125328348427",
+    "firebase_url": "https://venture-af3d4.firebaseio.com",
+    "project_id": "venture-af3d4",
+    "storage_bucket": "venture-af3d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125328348427:android:54a067414ca51345",
+        "android_client_info": {
+          "package_name": "com.example.venture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125328348427-8okggq0v96nqruv942pom2375tusrrm8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG8z9i0u2durL1_-Lly_ALkfczyHmZ36M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
