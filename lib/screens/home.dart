@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:progress_indicators/progress_indicators.dart';
 import 'browseflight.dart';
 import 'package:flutter/cupertino.dart';
+import 'trips.dart';
 
 class StartTravel extends StatefulWidget {
   @override
@@ -18,12 +19,24 @@ class StartTravelState extends State<StartTravel> {
       appBar: AppBar(
         backgroundColor: Color(0xFFE05351),
         elevation: 0.0,
+        actions: <Widget>[
+          Container(
+            margin: EdgeInsets.only(right: 20.0),
+            child: GestureDetector(
+              child: Icon(Icons.card_travel, color: Colors.white,),
+              onTap: (){
+                Navigator.of(context).push(CupertinoPageRoute(
+                  builder: (_){
+                    return TripsPage();
+                  }
+                ));
+              },
+            ),
+          )
+        ],
       ),
       body: Column(
         children: <Widget>[
-          SizedBox(
-            height: 30.0,
-          ),
           JumpingDotsProgressIndicator(
             dotSpacing: 3.0,
             milliseconds: 200,
@@ -31,7 +44,7 @@ class StartTravelState extends State<StartTravel> {
             fontSize: 100.0,
           ),
           Container(
-            margin: EdgeInsets.only(top: 200.0),
+            margin: EdgeInsets.only(top: 150.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
@@ -49,7 +62,7 @@ class StartTravelState extends State<StartTravel> {
                         }));
                       },
                       child:
-                          Text("TravelNow", style: TextStyle(fontSize: 25.0)),
+                          Text("Travel Now", style: TextStyle(fontSize: 25.0)),
                     )),
               ],
             ),

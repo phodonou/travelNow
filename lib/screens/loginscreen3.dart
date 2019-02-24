@@ -26,7 +26,7 @@ class _LoginScreen3State extends State<LoginScreen3>
           fit: BoxFit.cover,
         ),
       ),
-      child: new Column(
+      child: new ListView(
         children: <Widget>[
           Container(
             padding: EdgeInsets.only(top: 250.0),
@@ -159,7 +159,7 @@ class _LoginScreen3State extends State<LoginScreen3>
           fit: BoxFit.cover,
         ),
       ),
-      child: new Column(
+      child: new ListView(
         children: <Widget>[
           Container(
             padding: EdgeInsets.all(120.0),
@@ -507,7 +507,7 @@ class _LoginScreen3State extends State<LoginScreen3>
           fit: BoxFit.cover,
         ),
       ),
-      child: new Column(
+      child: new ListView(
         children: <Widget>[
           Container(
             padding: EdgeInsets.all(100.0),
